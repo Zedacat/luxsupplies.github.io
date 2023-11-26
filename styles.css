@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Product Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; 
+  }
+  
+  .content-container {
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .rounded-rectangle {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1); 
+  }
+  
+  .icon {
+    margin-bottom: 20px; 
+  }
+  
+  .text-section {
+    text-align: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 35px;
+  }
+  
+  .image {
+    height: auto; 
+    max-width: 100%; 
+  }
+  
+  .discord, .shop, .contact {
+    width: 50px; 
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://images.alphacoders.com/119/1196960.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    z-index: -2;
+  }
+  
+  .main-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px; 
+  }
+  
+  .icon img {
+    height: auto;
+    max-width: 50px;
+  }
+
+  .description {
+    font-size: 18px;
+    color: #fff;
+  }
+  
